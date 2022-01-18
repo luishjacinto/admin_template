@@ -56,7 +56,7 @@ export default function Autenticacao() {
                 <h1 className={`
                     text-3xl font-bold mb-5
                 `}>
-                    {mode === 'signIn' ? 'Entre com a seu E-mail e Senha' : 'Cadastre-se na nossa Plataforma'}
+                    {mode === 'signIn' ? 'Entre com o seu E-mail e Senha' : 'Cadastre-se na nossa Plataforma'}
                 </h1>
 
                 {error && (
