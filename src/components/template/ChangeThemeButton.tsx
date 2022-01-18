@@ -1,12 +1,10 @@
-import { Theme } from '../../types/Theme'
 import {
     IconSun,
     IconMoon
 } from '../icons/index'
 
-
 interface ChangeThemeButtonProps {
-    theme: Theme
+    theme: string
     changeTheme: () => void
 }
 
