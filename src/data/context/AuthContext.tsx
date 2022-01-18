@@ -5,12 +5,12 @@ import route from 'next/router';
 import Cookies from 'js-cookie'
 
 interface AuthContextProps {
-    user: User
-    signUp: (email:string , password: string) => Promise<void>
-    signIn: (email:string , password: string) => Promise<void>
-    signInGoogle: () => Promise<void>
-    logout: () => Promise<void>
-    loading: boolean
+    user?: User
+    signUp?: (email:string , password: string) => Promise<void>
+    signIn?: (email:string , password: string) => Promise<void>
+    signInGoogle?: () => Promise<void>
+    logout?: () => Promise<void>
+    loading?: boolean
 }
 
 const AuthContext = createContext<AuthContextProps>({})
